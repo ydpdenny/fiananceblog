@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Global Frontier</title>
+  <title>머니테라피</title>
   <meta charset="utf-8" >
   {% load staticfiles %}
   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type = "text/css"/>
@@ -11,7 +11,7 @@
 <body>
   <style type="text/css">
     .jumbotron {
-      background-image: url('{% static 'img/globalbusiness.jpg' %}');
+      background-image: url('{% static 'img/sub1_1_01.jpg' %}');
       background-size: cover;
       text-shadow: black 0.2em 0.2em 0.2em;
       color: white;
@@ -27,7 +27,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href='/'>Global Frontier</a>
+        <a class="navbar-brand" href='/'>머니테라피</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
@@ -73,9 +73,9 @@
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-            aria-haspopup="true" area-expanded="false">Access<span class="caret"></span></a>
+            aria-haspopup="true" area-expanded="false">접속<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="{% url 'login' %}">LOG IN</a></li>
+              <li><a href="{% url 'login' %}">로그인</a></li>
 <!--              <li><a href='/register/'>SIGN IN</a></li>  -->
             </ul>
           </li>
@@ -85,39 +85,60 @@
   </nav>
   <div class="container">
     <div class="jumbotron">
-      <h1 class="text-center">Welcome to Global Frontier.</h1>
-      <p class="text-center">Global Frontier provides global business counsulting, solutions and knowledge.<p>
-      <p class="text-center"><a class="btn btn-primary btn-large" href="https://corp.kt.com/eng/html/global/main.html" target="_blank" role="button">More information</a></p>
+      <h1 class="text-center">머니테리피에 오신것을 환영합니다.</h1>
+      <p class="text-center">개개인에게 맟는 재무 심리 상담으로 인생이25긴 여행에서 막연한 불안감을 제거하여 행복한 삶을 살아갈 수 있도록 도와드립니다.<p>
+      <p class="text-center"><a class="btn btn-primary btn-large" href=# target="_blank" role="button">재무설계 신청하기</a></p>
 <!--      <p class="text-center"><a class="btn btn-primary btn-large" href="#" role="button">Container Asset Tracking</a>
       &nbsp; &nbsp; &nbsp; &nbsp; <a class="btn btn-primary btn-large" href="#" role="button">NB-IoT Asset Trackging</a></p>
 -->
     </div>
+    <style type="text/css">
+      .row {
+
+        text-align: center;
+
+      }
+    </style>
     <div class="row">
       <div class="col-md-3">
-        <h4>Container Asset Tracking</h4>
-        <p>Mobile container tracking service</p>
+        <h4>맞춤형 재태크</h4>
+        <img src="{% static 'img/sub2_3_01.jpg' %}" width="250"></img>
+        <p style="text-align:left">최근 들어 결혼은 필수가 아니라 선택인 젊은 남녀들이 증가하고 있습니다.
+          경제력을 갖춘 싱글들을 뜻하는 말로 골드미스, 골드미스터란 신조어까지 등장했죠.
+          그렇다면 모두 경제력이 있는 싱글 골드미스/미스터가 될 수 있는 걸까요?
+          여성은 남성보다 평균수명이 길고, 40대가 넘어가면서 경제 참여율은 급격히 떨어집니다.
+          수입이 생기는 기간보다 지출만 해 야 하는 기간이 더 길다는 얘깁니다.
+          그러므로 싱글의 자유로운 삶을 즐기기 위해선 일반인들보다 자산관리를 더욱 철저하게 해야 하며,
+          또한 노후설계 역시 완벽함에 가까운 준비가 되어야 합니다.</p>
+      </div>
+      <div class="col-md-3">
+        <h4>목적별 재태크</h4>
+        <img src="{% static 'img/sub3_3_01.jpg' %}" width="250"></img>
+        <p  style="text-align:left">요즘에는 정보가 넘쳐나는 세상이지만, 그만큼 정확한 정보인지 판가름하기가 어렵습니다.
+          정확한 정보를 구분하기 힘들다면, 재무분야의 전문가에게 자문을 구하는 것이 좋습니다.
+          자신에게 맞춤 재무 포트폴리오를 보유한다면 노후까지는 계획 또한 보유한 것이니까요.</p>
 
 
 
       </div>
       <div class="col-md-3">
-        <h4>NB-IoT Asset Tracking</h4>
-        <p>NB-IoT based asset tracking service</p>
-
-
-
-      </div>
-      <div class="col-md-3">
-        <h4>Smart Farming</h4>
-        <p>IoT total smart farm solution</p>
+        <h4>종자돈 만들기</h4>
+        <img src="{% static 'img/sub5_1_01.jpg' %}" width="250"></img>
+        <p  style="text-align:left">부자들 사이에는 이런 말이 있다고 합니다. “100억 부자는 운이 좋아야 가능하지만 10억 부자는 노력하면 될 수 있다. ”
+          월급이 적건 많건 열심히 절약해서 저축하고 투자하면 누구나 10억부자는 될수 있다는 말입니다.
+          물론 10억이라는 돈이 그냥 모아진다는 말이 아닌 “열심히 절약하고, 저축하고 투자를 해야 한다는 전제는 있습니다.
+          누누이 말하지만 세상에 쉽게 얻을수 있는 것은 없습니다. 그만큼 계획하고, 노력하고, 실행해야만 그 열매를 맛 볼수있을 테니까요.</p>
 
 
 
 
       </div>
       <div class="col-md-3">
-        <h4>IoT LED Signage</h4>
-        <p>LTE-M IoT LDE Signage solution</p>
+        <h4>노후대책마련</h4>
+        <img src="{% static 'img/sub1_1_01.jpg' %}" width="250"></img>
+        <p  style="text-align:left">우리나라는 세계에서도 유례를 찾기 힘들 정도로 고령화가 빠르게 진행되고 있습니다.
+          또한, 이제는 더는 국민연금이나 자녀에게 의존하지 못하고 스스로 자신의 노후를 책임지고 준비해야 하는 시대에 우리는 살고 있습니다.
+          은퇴 후 과연 어느 정도의 자금이 있어야 경제적으로 여유로운 생활을 즐길 수 있을까요?</p>
 
 
 
@@ -149,7 +170,7 @@
       <br>
       <div class="row">
         <div class="col-sm-2" style="text-align:left;"><h5>Copyright &copy; 2018</h5><h5>Denny Kim</h5></div>
-        <div class="col-sm-4" style="text-align:left;"><h5>About Us</h5><p>We are specialized in global business development.</p></div>
+        <div class="col-sm-4" style="text-align:left;"><h5></h5><p>누구나 부자가 되고 싶어합니다만 아무나 부자가되지 않습니다. 부는 추구하는 것이 아니라 만들어 가는 것입니다.</p></div>
         <div class="col-sm-5" style="text-align:right;"><br><h5><span class="glyphicon glyphicon-ok"></span> &nbsp; by Denny Kim</h5></div>
       </div>
     </div>
